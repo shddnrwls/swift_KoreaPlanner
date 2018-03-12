@@ -1,0 +1,6 @@
+framework module Pods_KoreaP {
+  umbrella header "Pods-KoreaP-umbrella.h"
+
+  export *
+  module * { export * }
+}
