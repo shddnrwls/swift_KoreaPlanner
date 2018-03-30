@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:KoreaP/.gitignore">
+   </FileRef>
+   <FileRef
       location = "group:KoreaP.xcodeproj">
    </FileRef>
    <FileRef

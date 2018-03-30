@@ -13,11 +13,10 @@ import AlertOnboarding
 class ViewController: UIViewController,AlertOnboardingDelegate{
     var alertView: AlertOnboarding!
     
-    var arrayOfImage = ["1", "2", "3"]
-    var arrayOfTitle = ["CREATE ACCOUNT", "CHOOSE THE PLANET", "DEPARTURE"]
-    var arrayOfDescription = ["In your profile, you can view the statistics of its operations and the recommandations of friends",
-                              "Purchase tickets on hot tours to your favorite planet and fly to the most comfortable intergalactic spaceships of best companies",
-                              "In the process of flight you will be in cryogenic sleep and supply the body with all the necessary things for life"]
+    var arrayOfImage = ["2", "3"]
+    var arrayOfTitle = ["CREATE ACCOUNT", "CREATE THE PLANET"]
+    var arrayOfDescription = ["회원가입을 하고 친구들과 같이 여행계획을 공유해보세요!",
+                              "지도에 마커를 찍어가면서 자신만의 여행루트와 계획을 작성해보세요!"]
     override func viewDidLoad() {
         super.viewDidLoad()
         alertView = AlertOnboarding(arrayOfImage: arrayOfImage, arrayOfTitle: arrayOfTitle, arrayOfDescription: arrayOfDescription)

@@ -12,7 +12,8 @@ import GooglePlaces
 import AlertOnboarding
 import Alamofire
 import SwiftyJSON
-import Persei
+
+
 
 
 @UIApplicationMain
@@ -22,16 +23,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        if let window = self.window {
-            window.backgroundColor = UIColor.white
-            let nav = UINavigationController()
-            let mainView = HomeViewController()
-            nav.viewControllers = [mainView]
-            window.rootViewController = nav
-            window.makeKeyAndVisible()
-        }
-        // Override point for customization after application launch.
+        UINavigationBar.appearance().tintColor = UIColor.red
+//        UINavigationBar.appearance().barTintColor = UIColor.red
+        UITabBar.appearance().tintColor = UIColor.red
+        
+        GMSServices.provideAPIKey("AIzaSyC8Z-20gylxnRvBAuQ8BGGFLw8YOsAYEsY")
+        GMSPlacesClient.provideAPIKey("AIzaSyBWAhN7BIOhvTGfYl96cUtx0ZWlf0ciyk8")
+       
         return true
     }
 
