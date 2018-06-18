@@ -26,7 +26,6 @@
 		04273BE72060E1AC002F5C91 /* SecheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04273BE62060E1AC002F5C91 /* SecheduleViewController.swift */; };
 		04273BE92060E1C5002F5C91 /* GoogleMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04273BE82060E1C5002F5C91 /* GoogleMapViewController.swift */; };
 		0427AAE220556014003CBC1E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0427AAE120556014003CBC1E /* LoginViewController.swift */; };
-		042DEF8D205FB7F300E75989 /* DetailRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042DEF8C205FB7F300E75989 /* DetailRegisterViewController.swift */; };
 		0436A1D02056334D00D6DCD6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436A1CF2056334D00D6DCD6 /* NetworkManager.swift */; };
 		045CC094206375DF008A8DC5 /* MyFriendlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045CC093206375DF008A8DC5 /* MyFriendlistViewController.swift */; };
 		045CC09620637E18008A8DC5 /* ReciveFriendListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045CC09520637E18008A8DC5 /* ReciveFriendListViewController.swift */; };
@@ -64,7 +63,6 @@
 		04273BE62060E1AC002F5C91 /* SecheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecheduleViewController.swift; sourceTree = "<group>"; };
 		04273BE82060E1C5002F5C91 /* GoogleMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapViewController.swift; sourceTree = "<group>"; };
 		0427AAE120556014003CBC1E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		042DEF8C205FB7F300E75989 /* DetailRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRegisterViewController.swift; sourceTree = "<group>"; };
 		0436A1CF2056334D00D6DCD6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		045CC093206375DF008A8DC5 /* MyFriendlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFriendlistViewController.swift; sourceTree = "<group>"; };
 		045CC09520637E18008A8DC5 /* ReciveFriendListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReciveFriendListViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +101,8 @@
 				041BBA902067B7F6004E7B9C /* MyFListViewController.swift */,
 				041BBA8E2067B540004E7B9C /* AllFriendViewController.swift */,
 				04273BE020602A34002F5C91 /* MyFriendTableViewCell.swift */,
+				041BBA962069DCBE004E7B9C /* ShareFriendViewController.swift */,
+				041BBA982069DD29004E7B9C /* ShareFriendAddViewController.swift */,
 				045CC093206375DF008A8DC5 /* MyFriendlistViewController.swift */,
 				045CC09520637E18008A8DC5 /* ReciveFriendListViewController.swift */,
 				04273BDE206029D7002F5C91 /* FriendlistViewController.swift */,
@@ -152,8 +152,6 @@
 				04273BE22060E145002F5C91 /* FriendView */,
 				04273BE32060E16D002F5C91 /* SecheduleView */,
 				04F836AE20563B5D00B7883C /* Home.storyboard */,
-				041BBA962069DCBE004E7B9C /* ShareFriendViewController.swift */,
-				041BBA982069DD29004E7B9C /* ShareFriendAddViewController.swift */,
 				041BBA8C2067ABC6004E7B9C /* MainViewController.swift */,
 				04122EE12064571F00C31165 /* UserDetailViewController.swift */,
 				04AE7CF12055518D00F5C30F /* Assets.xcassets */,
@@ -170,7 +168,6 @@
 				04AE7CEC2055518D00F5C30F /* ViewController.swift */,
 				0427AAE120556014003CBC1E /* LoginViewController.swift */,
 				04AE7CEE2055518D00F5C30F /* Main.storyboard */,
-				042DEF8C205FB7F300E75989 /* DetailRegisterViewController.swift */,
 				04054BA9205E6FB300A01354 /* RegisterViewController.swift */,
 			);
 			path = LoginView;
@@ -343,7 +340,6 @@
 				0436A1D02056334D00D6DCD6 /* NetworkManager.swift in Sources */,
 				04054BAA205E6FB300A01354 /* RegisterViewController.swift in Sources */,
 				041F868A20641DF60038E769 /* MySecheduleTableViewCell.swift in Sources */,
-				042DEF8D205FB7F300E75989 /* DetailRegisterViewController.swift in Sources */,
 				045CC094206375DF008A8DC5 /* MyFriendlistViewController.swift in Sources */,
 				045CC09620637E18008A8DC5 /* ReciveFriendListViewController.swift in Sources */,
 				04C681DE2064BC8A00874AEF /* GoogleDetailViewController.swift in Sources */,

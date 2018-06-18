@@ -79,17 +79,8 @@ class GoogleDetailViewController: UIViewController ,CLLocationManagerDelegate, G
         self.googleMapView.settings.myLocationButton = true
         // Creates a marker in the center of the map.
         let marker = GMSMarker()
-//        for i in 0 ... count
-//        {
-//            marker.position = CLLocationCoordinate2D(latitude: se[i].latitude, longitude: se[i].longitude)
-//            marker.title = se[i].name as String
-//            marker.icon = UIImage(named: "marker")
-//            marker.map = mapView
-//            path.add(CLLocationCoordinate2D(latitude: se[i].latitude, longitude: se[i].longitude))
-//            let rectangle = GMSPolyline(path: path)
-//            rectangle.map = googleMapView
-//        }
-//
+
+
         
     }
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
@@ -245,9 +236,9 @@ class GoogleDetailViewController: UIViewController ,CLLocationManagerDelegate, G
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "sechduleCell") as? SecheduleTableViewCell else {
             return UITableViewCell()
         }
-        cell.locationNamelbl.text = sechdulearr[indexPath.row].city as String!
-        cell.stdLbl.text = sechdulearr[indexPath.row].startdate as String!
-        cell.endLbl.text = sechdulearr[indexPath.row].enddate as String!
+        cell.locationNamelbl.text = sechdulearr[indexPath.row].city as String?
+        cell.stdLbl.text = sechdulearr[indexPath.row].startdate as String?
+        cell.endLbl.text = sechdulearr[indexPath.row].enddate as String?
         
         
 //        var dlong = se[indexPath.row]["longitude"] as? Double
@@ -303,11 +294,11 @@ class GoogleDetailViewController: UIViewController ,CLLocationManagerDelegate, G
             }
             
             for i in 0 ..< self.se.count{
-                var long = self.se[i]["longitude"] as! Double
-                var lat = self.se[i]["latitude"] as! Double
-                var na = self.se[i]["city"] as! String
-                var st = self.se[i]["startdate"] as! String
-                var ed = self.se[i]["enddate"] as! String
+                let long = self.se[i]["longitude"] as! Double
+                let lat = self.se[i]["latitude"] as! Double
+                let na = self.se[i]["city"] as! String
+                let st = self.se[i]["startdate"] as! String
+                let ed = self.se[i]["enddate"] as! String
                 let position = CLLocationCoordinate2D(latitude: lat, longitude: long)
                 let marker = GMSMarker(position: position)
                 marker.map = self.googleMapView
@@ -336,7 +327,7 @@ class GoogleDetailViewController: UIViewController ,CLLocationManagerDelegate, G
         ]
         print(params)
         let token =   UserDefaults.standard.object(forKey: "object" as String)
-        var headersVal = [
+        let headersVal = [
             "Authorization": (token as! String),
             ]
         let url = URL(string: "http://13.125.66.99:8080/koreaplaner/api/schedules/schedule/\(sid)/detail")!
@@ -346,7 +337,7 @@ class GoogleDetailViewController: UIViewController ,CLLocationManagerDelegate, G
                 
                 if let authorization = response.response?.allHeaderFields["Authorization"] as? String {
                     
-                    var newToken : String = authorization
+                    let newToken : String = authorization
                     UserDefaults.standard.set(newToken, forKey: "object")
                     UserDefaults.standard.synchronize()
                 }

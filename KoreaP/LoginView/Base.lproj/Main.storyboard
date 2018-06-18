@@ -1,22 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GAS-ME-fI2">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="EuphemiaCAS.ttc">
-            <string>EuphemiaUCAS</string>
-        </array>
-        <array key="Kailasa.ttc">
-            <string>Kailasa</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -68,7 +60,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="132.26600985221674"/>
+            <point key="canvasLocation" x="-633" y="47"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="EbE-vy-dEM">
@@ -275,97 +267,11 @@
             </objects>
             <point key="canvasLocation" x="2394" y="132"/>
         </scene>
-        <!--Detail Register View Controller-->
-        <scene sceneID="QEX-qb-42T">
-            <objects>
-                <viewController id="4f4-ne-Ip5" customClass="DetailRegisterViewController" customModule="KoreaP" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="VgJ-Zh-Cx9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ttsilhouette_2402174" translatesAutoresizingMaskIntoConstraints="NO" id="KrR-wU-vap">
-                                <rect key="frame" x="60" y="104" width="255" height="255"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="255" id="xf5-W0-UfO"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="자기소개" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vjc-7u-c2p">
-                                <rect key="frame" x="0.0" y="409" width="375" height="89"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QlA-GS-Vb0">
-                                <rect key="frame" x="60" y="498" width="255" height="136"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="koz-EY-8B8">
-                                <rect key="frame" x="0.0" y="684" width="375" height="60"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkj-8O-hp4">
-                                        <rect key="frame" x="0.0" y="0.0" width="295" height="60"/>
-                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="7R2-2c-Gzl"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Kailasa" family="Kailasa" pointSize="23"/>
-                                        <state key="normal" title="Sign Up">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="imageUpload:" destination="4f4-ne-Ip5" eventType="touchUpInside" id="knb-qz-KgP"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSA-ni-OEu">
-                                        <rect key="frame" x="295" y="0.0" width="80" height="60"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="wZR-2p-cf2"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Kailasa" family="Kailasa" pointSize="23"/>
-                                        <state key="normal" title="건너뛰기">
-                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.91022538509999995" green="0.96350760769999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="eEp-Uj-qsF" firstAttribute="trailing" secondItem="KrR-wU-vap" secondAttribute="trailing" constant="60" id="Aj3-tf-o8u"/>
-                            <constraint firstItem="Vjc-7u-c2p" firstAttribute="top" secondItem="KrR-wU-vap" secondAttribute="bottom" constant="50" id="Gzw-BY-JkM"/>
-                            <constraint firstItem="Vjc-7u-c2p" firstAttribute="leading" secondItem="eEp-Uj-qsF" secondAttribute="leading" id="NbH-uk-iMB"/>
-                            <constraint firstItem="koz-EY-8B8" firstAttribute="top" secondItem="QlA-GS-Vb0" secondAttribute="bottom" constant="50" id="PjT-wQ-AL8"/>
-                            <constraint firstItem="eEp-Uj-qsF" firstAttribute="bottom" secondItem="Vjc-7u-c2p" secondAttribute="bottom" constant="280" id="Qdl-BF-pkh"/>
-                            <constraint firstItem="QlA-GS-Vb0" firstAttribute="leading" secondItem="eEp-Uj-qsF" secondAttribute="leading" constant="60" id="Vzw-PL-nsp"/>
-                            <constraint firstItem="eEp-Uj-qsF" firstAttribute="trailing" secondItem="Vjc-7u-c2p" secondAttribute="trailing" id="W7d-Il-Kbr"/>
-                            <constraint firstItem="eEp-Uj-qsF" firstAttribute="bottom" secondItem="QlA-GS-Vb0" secondAttribute="bottom" constant="144" id="ecI-N3-Xdu"/>
-                            <constraint firstItem="eEp-Uj-qsF" firstAttribute="trailing" secondItem="koz-EY-8B8" secondAttribute="trailing" id="fVW-pq-sNe"/>
-                            <constraint firstItem="koz-EY-8B8" firstAttribute="leading" secondItem="eEp-Uj-qsF" secondAttribute="leading" id="gpO-Bu-yBr"/>
-                            <constraint firstItem="KrR-wU-vap" firstAttribute="leading" secondItem="eEp-Uj-qsF" secondAttribute="leading" constant="60" id="hE4-Jf-4GY"/>
-                            <constraint firstItem="KrR-wU-vap" firstAttribute="top" secondItem="eEp-Uj-qsF" secondAttribute="top" constant="60" id="umR-JU-dJW"/>
-                            <constraint firstItem="QlA-GS-Vb0" firstAttribute="top" secondItem="Vjc-7u-c2p" secondAttribute="bottom" id="uz2-jW-6BD"/>
-                            <constraint firstItem="eEp-Uj-qsF" firstAttribute="trailing" secondItem="QlA-GS-Vb0" secondAttribute="trailing" constant="60" id="zae-ti-PNe"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="eEp-Uj-qsF"/>
-                    </view>
-                    <connections>
-                        <outlet property="interests" destination="QlA-GS-Vb0" id="4qP-eW-0cK"/>
-                        <outlet property="profileImage" destination="KrR-wU-vap" id="1DS-IZ-ejT"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1jo-9D-Sdi" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3304.8000000000002" y="131.52709359605913"/>
-        </scene>
     </scenes>
     <resources>
         <image name="1" width="5000" height="3347"/>
-        <image name="ttsilhouette_2402174" width="800" height="600"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ReD-l4-NW6"/>
+        <segue reference="9Gs-bs-3l0"/>
     </inferredMetricsTieBreakers>
 </document>
